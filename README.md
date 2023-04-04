@@ -68,14 +68,23 @@
 4) It's a Last In First Out (LIFO) collection.
 5) It's good for 'undo operations', because for stacks retrieving an item and removing that item form one single operation (pop()).
 6) Items are stored in order, when you retrieve an item from the collection it removes the item.
-7) Ideal for undo, or for call stacks
+7) Ideal for undo, or for call stacks.
 
 ### Queues
 
 1) It's similar to Stack<T>, but with the difference that Queue<T> always supplies the item that's been waiting in the collection the longest.
 2) Great for storing tasks to be processed.
 3) It's a First in First out (FIFO) collection.
+4) You can queue() and dequeue().
+5) For queues and stacks, retrieving the next item normally removes it.
+6) You can use the method Peek() to get the next item.    
+7) Use a queue to process items in same order as added them
+   
+    ![image](https://user-images.githubusercontent.com/79495407/229881792-c53dc3fa-03ac-491c-878b-71028fc9a176.png)
 
+    ![image](https://user-images.githubusercontent.com/79495407/229885973-8f8b1a25-f598-4adf-9749-46b451fb3ee4.png)
+
+    
 ### About GetHashCode
     
 1) It's a method that is around on every single object.
