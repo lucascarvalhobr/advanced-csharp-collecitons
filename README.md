@@ -41,6 +41,11 @@
 
     ![image](https://user-images.githubusercontent.com/79495407/229627483-73de33fd-5fd4-4e70-bca1-324b61e537bf.png)
     
+11) Iterating through items is required because LinkedList<T> doesn't support direct lookup. You need to jump item by item, for example:
+    
+    ![image](https://user-images.githubusercontent.com/79495407/229825194-a89c71a3-a0a1-4a1b-942e-b68f6a046c58.png)
+
+
 ### Dictionaries
 
 1) It's a data structure that works as a bag of items accessed by a key, but those elements have no intrinsic order, it's random.
@@ -54,6 +59,22 @@
 1) Sorted Dictionaries are functionally very similar to a dictionary.
 2) It allows you to look up items by key, but it automatically sorts the items as they get added to the dictionary.
 3) It sorts its items by the dictionary key (it's a restrition).
+
+### Stacks
+
+1) It's specifically dedicated to situations where you have a list of items to be processed or tasks of some kind to be performed.
+2) The situation is: new items are added to collection; Items are removed as they are processed.
+3) You don't add items to stack, you 'push' items onto a stack; you don't remove items from a stack, you 'pop' items from a stack.
+4) It's a Last In First Out (LIFO) collection.
+5) It's good for 'undo operations', because for stacks retrieving an item and removing that item form one single operation (pop()).
+6) Items are stored in order, when you retrieve an item from the collection it removes the item.
+7) Ideal for undo, or for call stacks
+
+### Queues
+
+1) It's similar to Stack<T>, but with the difference that Queue<T> always supplies the item that's been waiting in the collection the longest.
+2) Great for storing tasks to be processed.
+3) It's a First in First out (FIFO) collection.
 
 ### About GetHashCode
     
