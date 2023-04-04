@@ -103,6 +103,8 @@ All above collections are not thread safe!
     
     ![image](https://user-images.githubusercontent.com/79495407/229892227-6ae40589-08a3-47da-9c51-9669bd65a432.png)
 
+    ![image](https://user-images.githubusercontent.com/79495407/229905433-c2d25a23-2f35-49c5-8324-d4379b468b2b.png)
+
 ### About GetHashCode
     
 1) It's a method that is around on every single object.
