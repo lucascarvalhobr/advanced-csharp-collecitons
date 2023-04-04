@@ -1,5 +1,7 @@
 # Advanced C# collections
 
+![image](https://user-images.githubusercontent.com/79495407/229903262-a49eef5c-5afd-4ae8-99cd-1cb210b99b5d.png)
+
 ### Arrays
 
 1) An array is a block of memory in which the items are stored sequentially.
@@ -84,7 +86,23 @@
 
     ![image](https://user-images.githubusercontent.com/79495407/229885973-8f8b1a25-f598-4adf-9749-46b451fb3ee4.png)
 
+### Sets
     
+1) Enforce uniqueness
+2) Perform operations on whole collections, such as merging collections
+3) HashSet<T> ignores duplicate values when adding, it's a collection of unique values.
+4) HashSet<T> is very scalable/efficient at enforcing uniqueness.
+    
+    ![image](https://user-images.githubusercontent.com/79495407/229901997-cd21a496-1978-47fe-a457-6588e3488b75.png)
+    
+    ![image](https://user-images.githubusercontent.com/79495407/229902875-8a09714c-1ea8-4637-a6be-9961eac649e1.png)
+
+## Concurrent Collections
+    
+All above collections are not thread safe!
+    
+    ![image](https://user-images.githubusercontent.com/79495407/229892227-6ae40589-08a3-47da-9c51-9669bd65a432.png)
+
 ### About GetHashCode
     
 1) It's a method that is around on every single object.
