@@ -1,5 +1,7 @@
 # Advanced C# collections
 
+![image](https://user-images.githubusercontent.com/79495407/229903262-a49eef5c-5afd-4ae8-99cd-1cb210b99b5d.png)
+
 ### Arrays
 
 1) An array is a block of memory in which the items are stored sequentially.
@@ -39,7 +41,13 @@
     
     ![image](https://user-images.githubusercontent.com/79495407/229616168-b86c1f5b-a213-4c97-885d-6d64ed5410f4.png)
 
+    ![image](https://user-images.githubusercontent.com/79495407/229627483-73de33fd-5fd4-4e70-bca1-324b61e537bf.png)
     
+11) Iterating through items is required because LinkedList<T> doesn't support direct lookup. You need to jump item by item, for example:
+    
+    ![image](https://user-images.githubusercontent.com/79495407/229825194-a89c71a3-a0a1-4a1b-942e-b68f6a046c58.png)
+
+
 ### Dictionaries
 
 1) It's a data structure that works as a bag of items accessed by a key, but those elements have no intrinsic order, it's random.
@@ -53,6 +61,47 @@
 1) Sorted Dictionaries are functionally very similar to a dictionary.
 2) It allows you to look up items by key, but it automatically sorts the items as they get added to the dictionary.
 3) It sorts its items by the dictionary key (it's a restrition).
+
+### Stacks
+
+1) It's specifically dedicated to situations where you have a list of items to be processed or tasks of some kind to be performed.
+2) The situation is: new items are added to collection; Items are removed as they are processed.
+3) You don't add items to stack, you 'push' items onto a stack; you don't remove items from a stack, you 'pop' items from a stack.
+4) It's a Last In First Out (LIFO) collection.
+5) It's good for 'undo operations', because for stacks retrieving an item and removing that item form one single operation (pop()).
+6) Items are stored in order, when you retrieve an item from the collection it removes the item.
+7) Ideal for undo, or for call stacks.
+
+### Queues
+
+1) It's similar to Stack<T>, but with the difference that Queue<T> always supplies the item that's been waiting in the collection the longest.
+2) Great for storing tasks to be processed.
+3) It's a First in First out (FIFO) collection.
+4) You can queue() and dequeue().
+5) For queues and stacks, retrieving the next item normally removes it.
+6) You can use the method Peek() to get the next item.    
+7) Use a queue to process items in same order as added them
+   
+    ![image](https://user-images.githubusercontent.com/79495407/229881792-c53dc3fa-03ac-491c-878b-71028fc9a176.png)
+
+    ![image](https://user-images.githubusercontent.com/79495407/229885973-8f8b1a25-f598-4adf-9749-46b451fb3ee4.png)
+
+### Sets
+    
+1) Enforce uniqueness
+2) Perform operations on whole collections, such as merging collections
+3) HashSet<T> ignores duplicate values when adding, it's a collection of unique values.
+4) HashSet<T> is very scalable/efficient at enforcing uniqueness.
+    
+    ![image](https://user-images.githubusercontent.com/79495407/229901997-cd21a496-1978-47fe-a457-6588e3488b75.png)
+    
+    ![image](https://user-images.githubusercontent.com/79495407/229902875-8a09714c-1ea8-4637-a6be-9961eac649e1.png)
+
+## Concurrent Collections
+    
+All above collections are not thread safe!
+    
+    ![image](https://user-images.githubusercontent.com/79495407/229892227-6ae40589-08a3-47da-9c51-9669bd65a432.png)
 
 ### About GetHashCode
     
